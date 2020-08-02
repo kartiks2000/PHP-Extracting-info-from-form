@@ -13,8 +13,12 @@
             $name = $_POST['username'];
             $pswd = $_POST['password'];
 
-            echo "Your username is : " . $name;
-            echo "Your password is : " . $pswd;
+            if(strlen($name) < 6){
+                echo "Sorry short username!!!";
+            }
+            else{
+                echo "Welcome";
+            }
         }
         
     ?>
